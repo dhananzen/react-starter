@@ -26,7 +26,7 @@ app.use(delim, function (req, res, next) {
 });
 
 app.get('*', function (request, response) {
-	response.sendFile(__dirname + '/dist/index.html');
+	response.sendFile(__dirname + '/public/index.html');
 });
 
 exports.startServer = function (port, path, callback) {
